@@ -57,3 +57,25 @@ List their **volume sizes**
 (**Note:** If you are going to run this script from your Mac or Windows and you don't already have boto3 installed. I would sugguest running it in a virtual environment.)
 
 ## 1. **Create Virtual Environment (Optional, but Highly Recommended)**
+
+```bash
+# Create virtual environment
+python -m venv venv
+
+# Activate it
+source venv/bin/activate  # For Mac/Linux
+venv\Scripts\activate     # For Windows
+
+# Install boto3
+pip install boto3
+```
+## 2. **Run your Script (Use which ever python version you running)**
+```bash
+python3 my_script.py
+```
+
+## 3. **Deactivate Virtual Environment (When you are finshing running the script and removing the volumes)**
+```bash
+deactivate
+```
+
