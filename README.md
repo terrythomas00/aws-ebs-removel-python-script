@@ -71,8 +71,10 @@ pip install boto3
 ```
 ## 2. **Run your Script (Use which ever python version you running)**
 ```bash
-python3 my_script.py
+python3 ebs_cleanup.py
 ```
+![EBS Script Output](ebs_list_cleanup_linux_screenshot.png)
+
 
 ## 3. **Deactivate Virtual Environment (When you are finshing running the script and removing the volumes)**
 ```bash
