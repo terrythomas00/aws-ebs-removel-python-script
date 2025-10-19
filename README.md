@@ -39,5 +39,19 @@ do
   aws ec2 delete-volume --region us-east-1 --volume-id ${array[volume_id]}  
 done
 ```
+# Final Solution: Python Script
+
+As I was learning Python, I wanted to improve a Bash script I had originally written to help identify unused EBS volumes in our AWS environment. The goal was to make the process more efficient and easier to maintain.
+
+With the help of ChatGPT, I rewrote the script in Python—keeping it as simple and focused as possible. (Sometimes AI tools can be too helpful, adding complexity where it's not needed!)
+
+The final script allows me to:
+
+Search for **available (unused) EBS volumes**
+
+List their **volume sizes**
 
 
+**What It Does**
+
+(**Note:** If you are going to run this script from your Mac or Windows and you don't already have boto3 installed. I would sugguest running it in a virtual environment.)
