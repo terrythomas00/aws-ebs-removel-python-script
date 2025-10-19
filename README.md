@@ -52,6 +52,8 @@ Search for **available (unused) EBS volumes**
 List their **volume sizes**
 
 
-**What It Does**
+## What It Does
 
 (**Note:** If you are going to run this script from your Mac or Windows and you don't already have boto3 installed. I would sugguest running it in a virtual environment.)
+
+## 1. **Create Virtual Environment (Optional, but Highly Recommended)**
