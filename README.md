@@ -29,3 +29,15 @@ Here's the Bash script that listed the EBS volumes and wrote them into a text fi
 aws ec2 describe-volumes --region us-east-1 --filters Name=status,Values=available,volume-id --output text >> volume2.txt
 ```
 
+Here's the Bash script used to delete the volumes once I reviewed them based on their size and availablity. Again there was a lot of copy and paste towards the end of this process. 
+```bash
+#!/bin/sh 
+array=( ) 
+length=${#array[@]} 
+for (( volume_id=0; volume_id<length; volume_id++ )); 
+do  
+  aws ec2 delete-volume --region us-east-1 --volume-id ${array[volume_id]}  
+done
+```
+
+
