@@ -53,7 +53,7 @@ List their **volume sizes**
 
 # Prerequisites
 
-## 1. **Set Your AWS User Configurations**
+## 1. **Setup Your AWS User Configurations**
 ```bash
 aws configure
 ```
@@ -89,7 +89,7 @@ python3 ebs_cleanup.py
 ![EBS Script Output](ebs_list_cleanup_linux_screenshot.png)
 
 
-![EBS Script Output](ebs delete cleanup linux screenshot.png)
+![EBS Script Output](ebs_delete_cleanup_linux_screenshot.png)
 
 
 ## 3. **Deactivate Virtual Environment (When you are finshing running the script and removing the volumes)**
