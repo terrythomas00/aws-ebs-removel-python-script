@@ -51,12 +51,25 @@ Search for **available (unused) EBS volumes**
 
 List their **volume sizes**
 
+# Prerequisites
 
-## What It Does
+## 1. **Set Your AWS User Configurations**
+```bash
+aws configure
+```
+## 2. **Enter Your User Credentials**
+```bash
+AWS Access Key ID [None]: 
+AWS Secret Access Key [None]: 
+Default region name [None]: 
+Default output format [None]: json
+```
+
 
 (**Note:** If you are going to run this script from your Mac or Windows and you don't already have boto3 installed. I would sugguest running it in a virtual environment.)
 
-## 1. **Create Virtual Environment (Optional, but Highly Recommended)**
+
+## 3. **Create Virtual Environment (Optional, but Highly Recommended)**
 
 ```bash
 # Create virtual environment
@@ -69,11 +82,14 @@ venv\Scripts\activate     # For Windows
 # Install boto3
 pip install boto3
 ```
-## 2. **Run your Script (Use which ever python version you running)**
+## 4. **Run your Script (Use which ever python version you running)**
 ```bash
 python3 ebs_cleanup.py
 ```
 ![EBS Script Output](ebs_list_cleanup_linux_screenshot.png)
+
+
+![EBS Script Output](ebs delete cleanup linux screenshot.png)
 
 
 ## 3. **Deactivate Virtual Environment (When you are finshing running the script and removing the volumes)**
